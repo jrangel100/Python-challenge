@@ -43,6 +43,7 @@ print(f"Average Change: {round(sum(change_profit)/len(change_profit),2)}")
 print(f"Greatest Increase in Profits: {month_count[Greatest_increase]} (${(str(increase))})")
 print(f"Greatest Decrease in Profits: {month_count[Greatest_decrease]} (${(str(decrease))})")      
 
+#output to txt file
 output = os.path.join(".", 'Analysis.txt')
 with open(output,"w") as Analysis:
     Analysis.write("Financial Analysis")
